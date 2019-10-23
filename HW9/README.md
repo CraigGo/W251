@@ -5,7 +5,7 @@
 > Bleu_and_Eval_Loss.JPG, globalstep_learningrate_trainloss.JPG images  
 
 **Q2)** How long does it take to complete the training run? (hint: this session is on distributed training, so it will take a while)  
-> ~13 hours  
+> ~14 hours  
 
 **Q3)** Do you think your model is fully trained? How can you tell?  
 > No. The rates are still changing slowly (BLEU increasing, Eval Loss & Learning Rate decreasing). I would expect more of a flatline.  
@@ -41,8 +41,7 @@
 > ~.76s  
 
 **Q12)** How does that correlate with the observed network utilization between nodes?  
-> 860MB for model size  
-> 23hrs = 82,800 seconds  
-> Network Traffic = 1,000,000 Bytes/second
-> This results in 828,000,000,000 Bytes or 828MB  so this is pretty close to 860MB  
+> ~840MB for model size  
+> 13.5hrs = 48,600 seconds  
+> network traffice ~1,700,000 bytes/sec in network traffic to get to the model size of ~840MB  
 
