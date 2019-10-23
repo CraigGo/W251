@@ -1,10 +1,11 @@
 **Questions**
 
 **Q1)** Please submit the nohup.out file along with screenshots of your Tensorboard indicating training progress (Bleu score, eval loss) over time.
-> See nohup.out and TensorBoard images.  
+> See nohup.out  
+> Bleu_and_Eval_Loss.JPG, globalstep_learningrate_trainloss.JPG images  
 
 **Q2)** How long does it take to complete the training run? (hint: this session is on distributed training, so it will take a while)  
-> ~23 hours  
+> ~13 hours  
 
 **Q3)** Do you think your model is fully trained? How can you tell?  
 > No. The rates are still changing slowly (BLEU increasing, Eval Loss & Learning Rate decreasing). I would expect more of a flatline.  
