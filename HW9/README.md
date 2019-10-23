@@ -30,12 +30,15 @@
 
 **Q9)** What are the files that a TF checkpoint is comprised of?  
 > data, index, metafile  
+-rw-r--r-- 1 root root 813M Oct 22 19:48 model.ckpt-0.data-00000-of-00001  
+-rw-r--r-- 1 root root   1M Oct 22 19:48 model.ckpt-0.index  
+-rw-r--r-- 1 root root  16M Oct 22 19:48 model.ckpt-0.meta  
 
 **Q10)** How big is your resulting model checkpoint (mb)?  
-> ~860MB  
+> ~830MB  
 
 **Q11)** Remember the definition of a "step". How long did an average step take?  
-> ~1.70s  
+> ~.76s  
 
 **Q12)** How does that correlate with the observed network utilization between nodes?  
 > 860MB for model size  
