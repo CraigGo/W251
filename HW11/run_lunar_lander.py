@@ -96,7 +96,7 @@ if __name__=="__main__":
         frame = env.render(mode='rgb_array')
         frames.append(frame)
         if steps >= training_thr and steps %1000 == 0:
-            fname = "/tmp/videos/frame_v3_"+str(steps)+".mp4"
+            fname = "/tmp/videos/frame_v4_"+str(steps)+".mp4"
             skvideo.io.vwrite(fname, np.array(frames))
             del frames
             frames = []
