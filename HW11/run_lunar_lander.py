@@ -61,7 +61,7 @@ if __name__=="__main__":
 
             # instead of predicting the reward for each individual candidate proposal,
             # just batch them together and infer.
-	    batch_size = 100
+            batch_size = 100
             a_candidates = np.random.uniform(low=-1, high=1, size=(batch_size, 2))
             s_expanded = np.broadcast_to(new_s, (batch_size, 8))
             all_candidates = np.concatenate([s_expanded, a_candidates], axis=1)
