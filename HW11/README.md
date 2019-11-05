@@ -1,6 +1,6 @@
 **Homework #11**  
   
-**1) The 4 different model videos are included (v1 to v4) and in IBMCloud. Python code is attached to show the code changes. **  
+**1) The 4 different model videos are included (v1 to v4) and in IBMCloud. Python code is attached to show the code changes.**  
   
 **2) Changes & Results:**  
 - Model v1: This is the base model  
@@ -39,6 +39,7 @@ Adadelta is an extension of Adagrad that restricts the window of accumulated pas
 The Model layers were increased for Models 3 and 4, which seemed to have little impact on the number of landings. In model 4, Adamax was used again with more layers relative to Model 2, which resulted in landing decreasing from 53 (model 2) to 35 (model 4)
   
 Another model that would be interesting is to increase training time.  
+  
   
 * Code Speedup:  
 batch_size = 100  
