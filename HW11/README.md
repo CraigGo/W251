@@ -1,6 +1,6 @@
 **Homework #11**  
   
-**1) The 4 different model videos are included (v1 to v4) and in IBMCloud (https://s3.sjc04.cloud-object-storage.appdomain.cloud/w251-hw11/).  Python code is attached to show the code changes.**  
+**1) The 5 different model videos are included (v1 to v5) and in IBMCloud (https://s3.sjc04.cloud-object-storage.appdomain.cloud/w251-hw11/).  Python code is attached to show the code changes.**  
   
 **2) Changes & Results:**  
 - Model v1: This is the base model  
@@ -32,13 +32,21 @@
 > Landings: 35  
 > Optimizer: adamax  
   
+- Model v5: Same as Model 4, except training time was increased from 3,000 to 10,000  
+> Hours: 6  
+> Steps: 50,000  
+> Min Loss: 121  
+> Loss Rate: downward slope, potentially not reaching minimum  
+> Landings: 47  
+> Optimizer: adamax  
+
 Adamax is a special case of Adam where its second-order moment v0 is replaced by infinite-order moment which makes the algorithm more stable and more robust to noise in the gradients.  In this exercise the number of landings almost doubled (31 to 53) moving from adam to adamax.  
   
 Adadelta is an extension of Adagrad that restricts the window of accumulated past gradients to a fixed size, w.  The number of landings were similar to Adamax (48 to 53), though the minimum loss was lower at 105 after 50,000 steps.
   
 The Model layers were increased for Models 3 and 4, which seemed to have little impact on the number of landings. In model 4, Adamax was used again with more layers relative to Model 2, which resulted in landing decreasing from 53 (model 2) to 35 (model 4)
   
-Another model that would be interesting is to increase training time.  
+By increasing the training from 3,000 to 10,000, there was an increase of 12 landings over the prior model. I thought the increase in training would result in more landings.
   
   
 * Code Speedup:  
