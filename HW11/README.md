@@ -44,9 +44,9 @@ Adamax is a special case of Adam where its second-order moment v0 is replaced by
   
 Adadelta is an extension of Adagrad that restricts the window of accumulated past gradients to a fixed size, w.  The number of landings were similar to Adamax (48 to 53), though the minimum loss was lower at 105 after 50,000 steps.
   
-The Model layers were increased for Models 3 and 4, which seemed to have little impact on the number of landings. In model 4, Adamax was used again with more layers relative to Model 2, which resulted in landing decreasing from 53 (model 2) to 35 (model 4)
+The Model layers were increased for Models 3, 4 and 5 , which seemed to have little impact on the number of landings. In model 4, Adamax was used again with more layers relative to Model 2, which resulted in landing decreasing from 53 (model 2) to 35 (model 4)
   
-By increasing the training from 3,000 to 10,000, there was an increase of 12 landings over the prior model. I thought the increase in training would result in more landings.
+By increasing the training from 3,000 to 10,000 in model 5, there was an increase of 12 landings over the prior model (4). I thought the increase in training would result in a lot more landings.  
   
   
 * Code Speedup:  
