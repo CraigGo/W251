@@ -1,6 +1,6 @@
 **Homework #11**  
   
-**1) The 4 different model videos are included (v1 to v4) and in IBMCloud. Python code is attached to show the code changes.**  
+**1) The 4 different model videos are included (v1 to v4) and in IBMCloud (https://s3.sjc04.cloud-object-storage.appdomain.cloud/w251-hw11/).  Python code is attached to show the code changes.**  
   
 **2) Changes & Results:**  
 - Model v1: This is the base model  
